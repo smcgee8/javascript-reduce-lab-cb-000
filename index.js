@@ -21,6 +21,7 @@ var totalBatteries = batteryBatches.reduce((total, batch) => total + batch);
 
 var wordCountMap = monologueLines.reduce( (wordCounts, line) => {
   var count = line.split(' ').length;
+  console.log(count)
   if(Object.keys(wordCount).includes(String(count))) {
     wordCounts[String(count)]++;
     return wordCounts;
