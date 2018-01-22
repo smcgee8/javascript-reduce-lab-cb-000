@@ -28,4 +28,4 @@ var wordCountMap = monologueLines.reduce( (wordCounts, line) => {
     wordCounts[String(count)] = 1;
     return wordCounts;
   }
-});
+}, {});
