@@ -23,7 +23,6 @@ const wordCountMap = monologueLines.reduce( (wordCounts, line) => {
   const count = line.split(' ').length;
   if(!wordCounts[count]) {
     wordCounts[String(count)] = 0;
-    return wordCounts;
   }
   wordCounts[count] ++;
   return wordCounts;
