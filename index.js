@@ -19,7 +19,7 @@ const monologueLines = [
 
 var totalBatteries = batteryBatches.reduce((total, batch) => total + batch);
 
-var wordCountMap = monologueLines.reduce( (wordCounts, line) => {
+const wordCountMap = monologueLines.reduce( (wordCounts, line) => {
   var count = line.split(' ').length;
   if(Object.keys(wordCount).includes(String(count))) {
     wordCounts[String(count)]++;
